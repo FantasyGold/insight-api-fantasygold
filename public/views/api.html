@@ -1,0 +1,190 @@
+<div data-ng-include src="'/views/includes/connection.html'"></div>
+<div class="container" data-ng-if="!hideSNavbar">
+    <div class="text-left">
+        <div>
+            <h3><span>API Quickstart</span></h3>
+        </div>
+        <div>
+            <p class="col-md-12">
+            Please see <a href="https://github.com/pembo210/Litesight-api" target="_blank">Lightsight API</a> for more info.
+            </p>
+        </div>
+        <div>
+            <h3><span>API</span></h3>
+        </div>
+        <div>
+            <p class="col-md-12">
+            By default, Litesight provides a REST API at <strong>/api</strong>, but this prefix is configurable from the var <strong>apiPrefix</strong> in the <strong>config.js</strong> file.
+            </p>
+        </div>
+        <div>
+            <h3><span>Block</span></h3>
+        </div>
+        <div>
+            <p class="col-md-12">
+            /api/block/[:hash]
+            </p>
+        </div>
+        <div>
+            <h3><span>Transaction</span></h3>
+        </div>
+        <div>
+            <p class="col-md-12">
+              /api/tx/[:txid]
+            </p>
+        </div>
+        <div>
+            <h3><span>Address</span></h3>
+        </div>
+        <div>
+            <p class="col-md-12">
+              /api/addr/[:addr][?noTxList=1&noCache=1]
+            </p>
+        </div>
+        <div>
+            <h3><span>Address Properties</span></h3>
+        </div>
+        <div>
+            <p class="col-md-12">
+              /api/addr/[:addr]/balance
+            </p>
+            <p class="col-md-12">
+              /api/addr/[:addr]/totalReceived
+            </p>
+            <p class="col-md-12">
+              /api/addr/[:addr]/totalSent
+            </p>
+            <p class="col-md-12">
+              /api/addr/[:addr]/unconfirmedBalance
+            </p>
+        </div>
+        <div>
+            <h3><span>Unspent Outputs</span></h3>
+        </div>
+        <div>
+            <p class="col-md-12">
+              /api/addr/[:addr]/utxo[?noCache=1]
+            </p>
+        </div>
+        <div>
+            <h3><span>Unspent Outputs for multiple addresses</span></h3>
+        </div>
+        <div>
+            <p class="col-md-12">
+              <strong>GET method:</strong>
+            </p>
+            <p class="col-md-12">
+              /api/addrs/[:addrs]/utxo
+            </p>
+            <p class="col-md-12">
+              <strong>POST method:</strong>
+            </p>
+            <p class="col-md-12">
+              /api/addrs/utxo
+            </p>
+            <p class="col-md-12">
+              <strong>POST params:</strong>
+            </p>
+            <p class="col-md-12">
+              addrs: LXAvXpjSyw5BdBWGc7FpdJMAhiY2PpPRk9,LdT3TYfEGmbWuGBMQXrtgwqLLFU3WV2zYK
+            </p>
+        </div>
+        <div>
+            <h3><span>Transactions by Block</span></h3>
+        </div>
+        <div>
+            <p class="col-md-12">
+              /api/txs/?block=HASH
+            </p>
+        </div>
+        <div>
+            <h3><span>Transactions by Address</span></h3>
+        </div>
+        <div>
+            <p class="col-md-12">
+              /api/txs/?address=ADDR
+            </p>
+        </div>
+        <div>
+            <h3><span>Transaction broadcasting</span></h3>
+        </div>
+        <div>
+            <p class="col-md-12">
+              <strong>POST method:</strong>
+            </p>
+            <p class="col-md-12">
+              /api/tx/send
+            </p>
+            <p class="col-md-12">
+              <strong>POST params:</strong>
+            </p>
+            <p class="col-md-12">
+              rawtx: "signed transaction as hex string"
+            </p>
+            <p class="col-md-12">
+              eg
+            </p>
+            <p class="col-md-12">
+              rawtx: 01000000017b1eabe0209b1fe794124575ef807057c77ada2138ae4fa8d6c4de0398a14.......
+            </p>
+            <p class="col-md-12">
+              <strong>POST response:</strong>
+            </p>
+            <p class="col-md-12">
+                {
+            <br>
+                 txid: [:txid]
+            <br>
+                }
+            </p>
+            <p class="col-md-12">
+                eg
+            </p>
+            <p class="col-md-12">
+                {
+            <br>
+                 txid: "c7736a0a0046d5a8cc61c8c3c2821d4d7517f5de2bc66a966011aaa79965ffba"
+            <br>
+                }
+            </p>
+        </div>
+        <div>
+            <h3><span>Historic blockchain data sync status</span></h3>
+        </div>
+        <div>
+            <p class="col-md-12">
+              /api/sync
+            </p>
+        </div>
+        <div>
+            <h3><span>Live network p2p data sync status</span></h3>
+        </div>
+        <div>
+            <p class="col-md-12">
+              /api/peer
+            </p>
+        </div>
+        <div>
+            <h3><span>Status of the FantasyGold network</span></h3>
+        </div>
+        <div>
+            <p class="col-md-12">
+              /api/status?q=getInfo
+            </p>
+            <p class="col-md-12">
+              /api/status?q=getDifficulty
+            </p>
+            <p class="col-md-12">
+              /api/status?q=getTxOutSetInfo
+            </p>
+            <p class="col-md-12">
+              /api/status?q=getBestBlockHash
+            </p>
+            <p class="col-md-12">
+              /api/status?q=getLastBlockHash
+            </p>
+        </div>
+    </div>
+</div>
+
+

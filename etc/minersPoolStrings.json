@@ -1,0 +1,53 @@
+[
+   {
+      "poolName":"litecoinpool.org",
+      "url":"https://litecoinpool.org/",
+      "searchStrings":[
+         "litecoinpool.org"
+      ]
+   },
+   {
+      "poolName":"give-me-coins",
+      "url":"http://give-me-coins.com/",
+      "searchStrings":[
+         "give-me-coins.com"
+      ]
+   },
+   {
+      "poolName":"wemineltc",
+      "url":"https://www.wemineltc.com/",
+      "searchStrings":[
+         "wemineltc"
+      ]
+   },
+   {
+      "poolName":"Discus Fish",
+      "url":"http://f2pool.com/",
+      "searchStrings":[
+         "七彩神仙鱼",
+         "Made in China",
+         "Mined by user"
+      ]
+   },
+   {
+      "poolName":"Discus Fish Solo",
+      "url":"http://f2pool.com/",
+      "searchStrings":[
+         "For Pierce and Paul"
+      ]
+   },
+   {
+      "poolName":"GIVE-ME-COINS",
+      "url":"https://give-me-coins.com/",
+      "searchStrings":[
+         "Mined at GIVE-ME-COINS.com"
+      ]
+   },
+   {
+      "poolName":"hashfaster",
+      "url":"https://ltc.hashfaster.com/",
+      "searchStrings":[
+         "ltc.hashfaster.com/"
+      ]
+   }
+]
